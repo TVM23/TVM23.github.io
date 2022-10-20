@@ -1,343 +1,95 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pagina web personal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="custom.css">
-  </head>
-  <body>
-   
-<header class="pb-3 mb-4 border-bottom pt-3" style="background-color: black;">
-      <a href="/" class="d-flex align-items-center text-decoration-none" style="color: white;">
-        <i class="bi bi-journal-text" style="font-size: 3rem;padding: 10px 20px;"></i>
-      <span class="fs-4">MI CURRICULUM VITAE</span>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preload" href="/css/normalize.css" as="style" />
+    <link rel="stylesheet" href="/css/normalize.css" />
 
-      </a>
-</header>
-    <div class="col-12 row" style="margin: 0;">
-
-      <div class="col-12">
-          <div class="p-5 mb-4 bg-light rounded-3" style="border: 1px solid black">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Hola, mucho gusto.</h1>
-              <p class="col-md-8 fs-4">Bienvenido a mi pagina personal, donde podras ver mi curriculum vitae y el avance de mi carrera profesional, espero que te agrade.</p>
+    <link rel="preload" href="/css/estilo.css" as="style" />
+    <link rel="stylesheet" href="/css/estilo.css" />
+</head>
+<body>
+    <section class="contenedor sombra">
+        <div class="formulario">
+            <div class="contenido">
+                <div class="imagen">
+                    <img src="/img/computadora.webp">
+                </div>
+            </div>
+            <div class="detalles">
+                <div class="sign-with">
+                    <p>Sign in with</p>
+                    <div class="sign">
+                        <div class="opcion-sign">
+                            <div class="iconos">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="opcion-sign">
+                            <div class="iconos">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="opcion-sign">
+                            <div class="iconos">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    <line x1="8" y1="11" x2="8" y2="16" />
+                                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                                    <line x1="12" y1="16" x2="12" y2="11" />
+                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="datos">
+                    <fieldset>
+                        <legend class="leyenda">
+                            Or
+                        </legend>
+                            <div class="etiqueta-campo-w66">
+                              <input type="text" id="txtNombre" class="campo-w100" placeholder="Email address" />
+                            </div>
+                        <div class="etiqueta-campo-w66">
+                            <input type="password" id="txtPass" class="campo-w100" placeholder="Password" />
+                        </div>
+                        <div class="extra">
+                            <div class="remember">
+                                <div class="check">
+                                    <input type="checkbox" id="chkCondiciones"/>
+                                </div>
+                                <div>
+                                    <label for="chkCondiciones" class="texto"></label>
+                                    <p>Remember me</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="forgot">
+                                <a href="#">Forgot password</a>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <a class="btn-login" href="#">
+                              <p>Login</p></a>
+                        </div>
+                        <div class="register">
+                            <p>Don't have an account?<span> Register</span></p>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
-      </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card col-12 shadow p-0" style="border: 1px solid black">
-            <img src="./src/images/perfil.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Mi nombre es Tadeo Vazquez Manzo</p>
-              <div class="col-12"><hr style="border:  1px solid black"></div>
-              <p class="card-text"> <strong>Hobbies</strong> </p>
-              <p class="card-text"> - Leer sobre historia y cultura </p>
-              <p class="card-text"> - Jugar videojuegos</p>
-              <p class="card-text"> - Ver peliculas y series</p>
-              <p class="card-text"> - Leer novelas de ciencia ficción</p>
-              <p class="card-text"> - Escuchar música</p>
-              
-              <div class="col-12"><hr style="border:  1px solid black"></div>
-              <button type="button" class="btn btn-primary col-12" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
-                Contacto
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Mi informacion Personal</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-12">
-                          <strong>MIS REDES SOCIALES</strong>
-                      </div>
-                      <div class="col-12">
-                          <i style="font-size: 1.5rem;" class="bi bi-telephone-fill"></i> +52 3531085444
-                      </div>
-                      <div class="col-12">
-                          <i style="font-size: 1.5rem;"  class="bi bi-google"></i> <a href="mailto:tvmnz23@gmail.com">tvmnz23@gmail.com</a>
-                      </div>
-                      <div class="col-12">
-                           <i style="font-size: 1.5rem;"  class="bi bi-facebook"></i> <a href="https://www.facebook.com/tadeo.vazquez.35325/"> Tadeo Vazquez Manzo</a>
-                      </div>
-                      <div class="col-12">
-                          <i style="font-size: 1.5rem;" class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/tadeo-vazquez-manzo-9a023224a/"> Tadeo Vazquez Manzo</a>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="col-md-9 col-sm-12">
-
-  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Perfil
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body row">
-        <div class="card col-12 shadow" >
-          <div class="card-body">
-            <h5 class="card-title">Sobre mi</h5>
-            <p class="card-text" style="text-align: justify;">Me considero una persona muy responsable, con un gran interés en expandir mis conocimientos, buscando tanto mejorar mis habilidades técnicas como mis bases profesionales, dispuesto a trabajar con gran esfuerzo y dedicación para cumplir con todas las metas y objetivos establecidos.</p>
-            <div class="col-12"><hr></div>
-            <h6 class="card-subtitle mb-2 text-muted">Idiomas que manejo</h6>
-            <p class="card-text">Español: Nativo</p>
-            <p class="card-text">Inglés: Intermedio, finalizado 4 de los 5 modulos de ingles impartidos por el Instituto Tecnológico de Jiquilpan</p>
-            <div class="col-12"><hr></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Experiencia profesional
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="text-center">
-           <img src="./src/images/inea.png" class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
-           <h2 style="font-size: 1.5rem;" class="fw-normal">INEA plaza Jiquilpan</h2>
-           <p>Auxiliar de soporte técnico, programa verano en una empresa del ITJ.</p>
-           <p>(julio, 2022 - agosto, 2022) </p>
-           <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal_1" style="background-color: black;" href="#">Ver detalles »</a></p>
-        </div>
-          <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel_1">Experiencia obtenida</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-12">
-                        <strong>Actividades realizadas</strong>
-                        <p></p>
-                        <p> - Reparación, instalación y mantenimiemto a equipo de cómputo y oficina.</p>
-                        <p> - Instalación y mantenimiento de redes de cómputo.</p>
-                        <p> - Tareas de conteo y revisión de inventarios.</p>
-                        <p> - Gestión de documentación.</p>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      </div><!-- /.col-lg-4 -->
-
-      <div class="col-lg-4">
-        <div class="text-center">
-          <img src="./src/images/ciber2.jpeg" class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
-          <h2 style="font-size: 1.5rem;" class="fw-normal">Ciber EZ</h2>
-          <p>Asistente de mantenimiento de equipo de computo.</p>
-          <p>(enero, 2021 - septiembre, 2021) </p>
-          <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal_2" style="background-color: black;" href="#">Ver detalles »</a></p>
-        </div>
-        <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel_2">Experiencia obtenida</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-12">
-                        <strong>Actividades realizadas</strong>
-                        <p></p>
-                        <p> - Reparaciones y mantenimiento de equipo de cómputo.</p>
-                        <p> - Soporte y atención de servicios al cliente.</p>
-                      </div>
- 
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      </div><!-- /.col-lg-4 -->
-
-      <div class="col-lg-4">
-        <div class="text-center">
-          <img src="./src/images/cbta.png" class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
-          <h2 style="font-size: 1.5rem;" class="fw-normal">CBTa 236</h2>
-          <p>Asistente técnico de servicios escolares. Servicio social. </p>
-          <p>(enero, 2020 - julio, 2020) </p>
-          <p><a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal_3" style="background-color: black;" href="#">Ver detalles »</a></p>
-        </div>
-        <div class="modal fade" id="exampleModal_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel_3">Experiencia obtenida</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-12">
-                        <strong>Actividades realizadas</strong>
-                        <p></p>
-                        <p> - Manejo de bases de datos de Microsoft Access.</p>
-                        <p> - Manipulación de archivos administrativos de hojas de cálculo de Microsoft Excel.</p>
-                        <p> - Optimización de la red escolar y directiva.</p>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-  </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Estudios
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <hr class="featurette-divider">
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Instituto Tecnológico de Jiquilpan.</h2>
-            <span class="text-muted">2020 - actualidad.</span>
-            <p class="lead">Ingeniero en sistemas computacionales.</p>
-            <p style="text-align: justify;">Estoy cursando mis estudios universitarios en esta institución con el enfoque de convertirme en un gran ingeniero y desarrollador, obteniendo conocimientos y realizando proyectos en  el uso de lenguajes de programación como Java, HTML, JavaScript, etcétera; estableciendo bases para la creación y administración de bases de datos manipulando aplicaciones como MySQL y SQL Server.</p>
-          </div>
-          <div class="col-md-5">
-            <img src="./src/images/itj.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
-
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Centro Bachillerato Tecnológico Agropecuario 236.</h2>
-              <span class="text-muted">2017 - 2020.</span>
-            <p class="lead">Técnico en ofimática.</p>
-            <p style="text-align: justify;">Esta fase abarca lo que fue mis estudios de preparatoria, obteniendo un gran repertorio de habilidades y experiencias, aprendiendo a usar de forma más eficiente herramientas y software de cómputo, adquiriendo un mejor dominio de la suite de Microsoft Office (Word, PowerPoint, Excel, Access, etc), asi como alcanzar una base firme sobre lo básico de la programación y las redes.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img src="./src/images/cbta.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"></rect>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-      <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Habilidades
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" class="d-block w-100" style="height: 500px;" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Conocimientos básicos en lenguajes de programación</h5>
-        <p>MySQL, Java, HTML5, CSS.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/02/lenguaje-programacion-1859691.jpg?itok=PSYEVgtj" class="d-block w-100" alt="..." style="height: 500px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Responsabilidad laboral</h5>
-        <p>Demostrando compromiso y dedicación en las asignaciones y tareas a realizar.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://primicias24.s3.amazonaws.com/public/uploads/2020/10/1366_2000-1.jpg" style="height:500px;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Manejo de software de Microsoft Office</h5>
-        <p>Word, PowerPoint, Excel, Access, etcétera.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://thumbs.dreamstime.com/b/concepto-de-crecimiento-profesional-un-hombre-con-malet%C3%ADn-en-la-mano-sube-las-escaleras-hasta-los-goles-trabajador-puesto-elevado-224822384.jpg" style="height:500px;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 style="color: black;">En mejora constante</h5>
-        <p style="color: black;">Siempre dispuesto a mejorar mis habilidades y desarrollar nuevas.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://static8.depositphotos.com/1258191/1065/i/600/depositphotos_10654338-stock-photo-two-businessmen-shaking-hands.jpg" style="height:500px;" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 style="color: black;">Conducta profesional</h5>
-        <p style="color: black;">Tolerancia, respeto y paciencia en la resolución de problemas</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-      </div>
-    </div>
-  </div>
-    
-  </div>
-</div>
-      </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-
-  </body>
-
-  <footer class="pt-3 mt-4 text-muted" style="border-top: 1px solid black">
-      <p style="color: black;">2022 - Programacion Web ITJ</p>
-  </footer>
+    </section>
+</body>
 </html>
